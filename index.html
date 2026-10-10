@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#26103f" />
+  <title>15 Reasons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
+
+  <div class="garden" aria-hidden="true">
+    <div class="tulip tulip-a"><span class="flower"><i></i></span><span class="stem"></span><span class="leaf leaf-left"></span><span class="leaf leaf-right"></span></div>
+    <div class="tulip tulip-b"><span class="flower"><i></i></span><span class="stem"></span><span class="leaf leaf-left"></span><span class="leaf leaf-right"></span></div>
+    <div class="tulip tulip-c"><span class="flower"><i></i></span><span class="stem"></span><span class="leaf leaf-left"></span><span class="leaf leaf-right"></span></div>
+    <div class="tulip tulip-d"><span class="flower"><i></i></span><span class="stem"></span><span class="leaf leaf-left"></span><span class="leaf leaf-right"></span></div>
+    <div class="tulip tulip-e"><span class="flower"><i></i></span><span class="stem"></span><span class="leaf leaf-left"></span><span class="leaf leaf-right"></span></div>
+  </div>
+
+  <div class="butterflies" aria-hidden="true">
+    <div class="butterfly butterfly-one"><span class="wing wing-left"></span><span class="wing wing-right"></span><span class="body"></span></div>
+    <div class="butterfly butterfly-two"><span class="wing wing-left"></span><span class="wing wing-right"></span><span class="body"></span></div>
+    <div class="butterfly butterfly-three"><span class="wing wing-left"></span><span class="wing wing-right"></span><span class="body"></span></div>
+  </div>
+
+  <main class="page">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">✿</span></div>
+      <button class="sound-toggle" id="sparkleBtn" type="button" aria-label="Make a little sparkle">✧ <span>make a wish</span></button>
+    </header>
+
+    <section class="intro" id="intro">
+      <p class="eyebrow"><span></span><span></span></p>
+      <h1>15 reasons<br><em>why I like you.</em></h1>
+      <p class="intro-copy">A tiny garden of things I notice, things I adore, and all the little reasons you have a special place in my thoughts.</p>
+      <div class="intro-flower" aria-hidden="true">✿</div>
+      <button class="primary-btn" id="beginBtn" type="button">Come a little closer <span>♡</span></button>
+      <p class="hint"></p>
+    </section>
+
+    <section class="reasons hidden" id="reasons" aria-live="polite">
+      <div class="progress-row">
+        <span class="progress-label">REASONS WHY I LIKE YOU</span>
+        <span class="progress-count" id="progressCount">01 <i>/ 15</i></span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <article class="reason-card" id="reasonCard">
+        <div class="card-top"><span class="reason-number" id="reasonNumber">REASON NO. 01</span><span class="heart-stamp">♡</span></div>
+        <div class="reason-art" id="reasonArt" aria-hidden="true">☾</div>
+        <h2 id="reasonTitle">Your smile</h2>
+        <p class="reason-text" id="reasonText"></p>
+        <div class="card-bottom"><span>for you, yanna</span><span class="tiny-flower">✿</span></div>
+      </article>
+      <div class="controls">
+        <button class="text-btn" id="prevBtn" type="button" disabled>← <span>previous</span></button>
+        <button class="next-btn" id="nextBtn" type="button">Next reason <span>→</span></button>
+      </div>
+      <p class="footnote" id="footnote">There are 15, and each one is yours.</p>
+    </section>
+
+    <section class="ending hidden" id="ending">
+      <div class="ending-bloom">✿</div>
+      <p class="eyebrow"><span></span> and if I could say one more thing <span></span></p>
+      <h2>It's not about finding<br><em>someone perfect.</em></h2>
+      <p class="ending-copy">It's about finding someone whose little imperfections, dreams, laughter, and ordinary days make you want to know them more. For me, that's you.</p>
+      <p class="ending-script">I like you, just as you are. ♡</p>
+      <div class="ending-actions">
+        <button class="primary-btn" id="replayBtn" type="button">Read them again <span>↺</span></button>
+        <button class="text-btn" id="petalsBtn" type="button">TAP ✿</button>
+      </div>
+      <p class="hint"></p>
+    </section>
+
+    <footer>i like you hehe <span>♡</span></footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">A little wish, just for you ✨</div>
+  <script src="script.js"></script>
+</body>
+</html>
